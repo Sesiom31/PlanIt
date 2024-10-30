@@ -1,0 +1,27 @@
+
+###
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username" : "Maya",
+    "email" : "mayraw_@gma.com",
+    "password" : "mayra123",
+    "role" : "user"
+}
+
+
+###
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "inputData" : "Maya",
+    "password" : "mayra123"
+}
+
+###
+POST http://localhost:5000/auth/logout
+
+###
+GET http://localhost:5000/auth/verify
